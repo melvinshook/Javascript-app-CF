@@ -117,24 +117,7 @@ let pokemonRepository = (function () {
 
   }
 
-  // search for pokemon
-  function search() {
-    let searchInput = document.querySelector('#search-bar');
-
-    searchInput.addEventListener('input', function() {
-      // Adds a Bootstrap class.
-      let pokemonList = document.querySelectorAll('.group-list-item');
-      let searchText = searchInput.value.toLowerCase();
-
-      pokemonList.forEach(function(pokemon) {
-        if (pokemon.innerText.toLowerCase().indexOf(searchText) > -1) {
-          pokemon.style.display = '';
-        } else {
-          pokemon.style.display = 'none';
-        }
-      });
-    });
-  }
+  
 
 
  
@@ -174,7 +157,8 @@ let pokemonRepository = (function () {
     loadDetails: loadDetails,
     showDetails: showDetails,
     showModal: showModal,
-    hideModal: hideModal
+    hideModal: hideModal,
+    search: search
   };
 })();
 
