@@ -26,7 +26,7 @@ let pokemonRepository = (function () {
     
     let button = document.createElement('button');
     button.innerText = pokemon.name;
-    button.classList.add('button');
+    button.classList.add('btn', 'btn-dark');
     button.setAttribute('data-target', '#exampleModal');
     button.setAttribute('data-toggle', 'modal');
 
@@ -106,6 +106,7 @@ let pokemonRepository = (function () {
     modalBody.append(weightElement);
     modalBody.append(typesElement);
     modalHeader.append(nameElement);
+    
    
 
   
