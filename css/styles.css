@@ -38,7 +38,8 @@ ul li {
 }
 
 .modal-img {
-  position: absolute;
+  display: block;
+  margin-left: 120px;
 }
 
 .modal-header {
@@ -46,10 +47,3 @@ ul li {
   align-content: center;
 }
 
-button {
-  background-color: red;
-}
-
-.open {
-  color: red;
-}
